@@ -12,7 +12,6 @@ const Cards = () => {
             title={info.title}
             site={info.site}
             tech={info.tech}
-            picture={info.picture}
           />
         </div>
       ))}
