@@ -3,6 +3,7 @@ import { InfoContext } from "./context/ContextApi";
 import Cards from "./components/Cards/Cards";
 import NavHeader from "./components/Header/Nav";
 import TableSkills from "./components/Table/TableSkills";
+import Home from "./components/Home/Home"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Router>
         <InfoContext.Provider value={cardInfo}>
           <NavHeader />
+          <Route exact path="/" component={Home} />
           <Route path="/portfolio" component={Cards} />
           <Route path="/skills" component={TableSkills} />
         </InfoContext.Provider>

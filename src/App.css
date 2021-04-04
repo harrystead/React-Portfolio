@@ -21,9 +21,8 @@ body {
     margin-top: 3%;
 }
 
-.table {
-    width: 70%;
-    position: absolute;
-    right: 15%;
-    margin-top: 1%;
+
+.heading-home {
+    text-align: center;
+    margin-top: 3%;
 }
