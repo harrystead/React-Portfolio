@@ -6,7 +6,6 @@ import TableSkills from "./components/Table/TableSkills";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import image from "./images/image.png"
 
 function App() {
   const cardInfo = [
