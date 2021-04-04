@@ -21,8 +21,13 @@ body {
     margin-top: 3%;
 }
 
-
 .heading-home {
     text-align: center;
     margin-top: 3%;
+}
+
+.container-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

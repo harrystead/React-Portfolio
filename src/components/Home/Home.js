@@ -9,7 +9,7 @@ const Home = () => {
       </div>
       <div className="heading-home">
           <h3>Full-Stack Developer</h3>
-          <Button href="./portfolio" variant="success">Go to Site</Button>
+          <Button href="./portfolio" variant="success">Portfolio</Button>
       </div>
     </div>
   );

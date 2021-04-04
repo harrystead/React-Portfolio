@@ -11,6 +11,7 @@ const NavHeader = () => {
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/portfolio" className="nav-link">Portfolio</Link>
             <Link to="/skills" className="nav-link">Skills</Link>
+            <Link to="/skills" className="nav-link">CV</Link>
           </Nav>
       </Navbar>
     );
