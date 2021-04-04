@@ -1,6 +1,8 @@
 import "./App.css";
 import { InfoContext } from "./context/ContextApi";
 import Cards from "./components/Cards/Cards";
+import NavHeader from "./components/Header/Nav";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const cardInfo = [
@@ -21,7 +23,8 @@ function App() {
     },
     {
       title: "Fitness Tracker",
-      tech: "A app that allows users to track their fitness built with React, Node & MonogoDB",
+      tech:
+        "A app that allows users to track their fitness built with React, Node & MonogoDB",
       site: "https://sheltered-shore-48118.herokuapp.com/",
     },
     {
@@ -38,9 +41,12 @@ function App() {
 
   return (
     <>
-      <InfoContext.Provider value={cardInfo}>
-        <Cards />
-      </InfoContext.Provider>
+      <Router>
+        <InfoContext.Provider value={cardInfo}>
+          <NavHeader />
+          <Route path="/portfolio" component={Cards} />
+        </InfoContext.Provider>
+      </Router>
     </>
   );
 }
