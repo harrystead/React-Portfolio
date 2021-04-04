@@ -10,7 +10,12 @@ const Cards = () => {
       <div className="card-group">
         {cardInfo.map((info) => (
           <div className="col-sm-4">
-            <CardSingle title={info.title} site={info.site} tech={info.tech} />
+            <CardSingle
+              title={info.title}
+              site={info.site}
+              tech={info.tech}
+              github={info.github}
+            />
           </div>
         ))}
       </div>
