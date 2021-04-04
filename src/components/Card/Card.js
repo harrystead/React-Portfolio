@@ -1,17 +1,16 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 
-const CardSingle = ({}) => {
+const CardSingle = ({ title, picture, tech, site }) => {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+            {tech}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button href={site} variant="primary">Go to Site</Button>
       </Card.Body>
     </Card>
   );
